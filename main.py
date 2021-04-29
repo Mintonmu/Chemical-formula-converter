@@ -67,13 +67,13 @@ class MY_APP(tk.Frame):
             self.sum1value = 0
             self.sum2value = 0
         # 第一个序列为空
-        if self.num1.get() == "" and self.sum1.get() == "":
+        if self.num1.get() == "" and self.sum1.get() == "" and self.sum2.get() !="" and self.sum2.get() !="":
             self.num1value = [0, ]
             self.sum1value = 0
             self.num2value = list(map(int, re.split(",|，", self.num2.get())))
             self.sum2value = data2[self.sum2.get()]
         # 第二个序列为空
-        if self.num2.get() == "" and self.sum2.get() == "":
+        if self.num2.get() == "" and self.sum2.get() == "" and self.sum1.get()!="" and self.sum1.get()!="":
             self.num1value = list(map(int, re.split(",|，", self.num1.get())))
             self.sum1value = data2[self.sum1.get()]
             self.num2value = [0, ]
